@@ -1,0 +1,121 @@
+header {
+   background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)),
+      url('./img/header/background-header.jpg') no-repeat;
+   background-position: center;
+   background-size: cover;
+   padding-bottom: 120px;
+}
+
+.header-top {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid #babbc5;
+}
+
+nav {
+   display: flex;
+   height: 100px;
+   flex-basis: 670px;
+
+   button {
+      color: #fff;
+      border: 3px solid transparent;
+      text-transform: uppercase;
+      background: transparent;
+      width: 100%;
+      height: inherit;
+      font-size: 13px;
+      font-weight: 700;
+   }
+}
+
+.header-content {
+   text-align: center;
+   margin-top: 131px;
+}
+.header-content__head {
+   font-size: 64px;
+   color: #fff;
+   font-weight: 900;
+   text-transform: uppercase;
+}
+.header-content__subhead {
+   color: #fff;
+   font-size: 24px;
+   font-weight: 400;
+   margin: 31px 0 79px;
+}
+
+.burger-icon {
+   display: none;
+}
+
+@media screen and (max-width: 1025px) {
+   header {
+      background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)),
+         url('./img/header/bg-header-1024px.jpg') no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 126px;
+   }
+   nav {
+      flex-basis: 559px;
+
+      button {
+         font-size: 12px;
+      }
+   }
+
+   .header-content {
+      margin-top: 157px;
+   }
+
+   .header-content__head {
+      font-size: 48px;
+   }
+
+   .header-content__subhead {
+      font-size: 18px;
+      margin: 61px 0 89px;
+   }
+}
+
+@media screen and (max-width: 800px) {
+   .header-top {
+      height: 55px;
+      border: none;
+   }
+
+   .burger-icon {
+      display: block;
+      margin-right: 15px;
+   }
+
+   nav {
+      display: none;
+   }
+}
+
+@media screen and (max-width: 676px) {
+   header {
+      padding-bottom: 52px;
+   }
+   .logo {
+      width: 103px;
+      max-height: 14px;
+   }
+
+   .header-content {
+      margin-top: 49px;
+   }
+
+   .header-content__head {
+      font-size: 36px;
+   }
+
+   .header-content__subhead {
+      font-size: 14px;
+      margin: 32px 0 49px;
+   }
+}

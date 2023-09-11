@@ -1,0 +1,49 @@
+$main-orange: #ff4343;
+
+*:not(title) {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Raleway', 'Sans-serif';
+   font-size: 18px;
+}
+
+ul {
+   list-style: none;
+}
+
+.container {
+   max-width: 1210px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+}
+
+.button {
+   background: $main-orange;
+   border: 0;
+   color: #fff;
+   text-transform: uppercase;
+   width: 369px;
+   height: 77px;
+   font-weight: 900;
+   font-size: 24px;
+}
+
+@media screen and (max-width: 1025px) {
+   .button {
+      width: 314px;
+   }
+}
+
+@media screen and (max-width: 676px) {
+   .button {
+      width: 280px;
+      height: 60px;
+   }
+}
