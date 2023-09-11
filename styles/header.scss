@@ -15,18 +15,28 @@ header {
 
 nav {
    display: flex;
-   height: 100px;
-   flex-basis: 670px;
 
-   button {
-      color: #fff;
-      border: 3px solid transparent;
-      text-transform: uppercase;
+   .button {
       background: transparent;
-      width: 100%;
       height: inherit;
       font-size: 13px;
+      line-height: 100px;
+      height: 100px;
+      max-width: 134px;
       font-weight: 700;
+      border-bottom: 3px solid transparent;
+
+      &:hover {
+         background: transparent;
+         border-bottom: 3px solid #babbc5;
+      }
+
+      &:active {
+         transition: all 0.1s ease;
+         border-bottom: 3px solid $hover-orange;
+         color: $hover-orange;
+         box-shadow: none;
+      }
    }
 }
 
@@ -60,9 +70,8 @@ nav {
       padding-bottom: 126px;
    }
    nav {
-      flex-basis: 559px;
-
-      button {
+      .button {
+         max-width: 112px;
          font-size: 12px;
       }
    }
