@@ -32,7 +32,7 @@ nav {
       }
 
       &:active {
-         transition: all 0.1s ease;
+         transition: all 0.001s ease;
          border-bottom: 3px solid $hover-orange;
          color: $hover-orange;
          box-shadow: none;

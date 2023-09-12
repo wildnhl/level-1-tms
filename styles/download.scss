@@ -1,0 +1,48 @@
+.download {
+   padding: 132px 0 114px;
+}
+.download-content {
+   text-align: center;
+   h3 {
+      font-size: 30;
+      font-weight: 500;
+      text-transform: capitalize;
+   }
+   h5 {
+      text-transform: uppercase;
+      margin: 22px 0 47px;
+   }
+}
+
+@media screen and (max-width: 1025px) {
+   .download-content {
+      h3 {
+         font-size: 24px;
+      }
+      h5 {
+         font-size: 14px;
+         margin: 20px 0 43px;
+      }
+   }
+}
+@media screen and (max-width: 600px) {
+   .download {
+      padding: 34px 0 45px;
+   }
+}
+
+@media screen and (max-width: 321px) {
+   .download-content {
+      h3 {
+         font-size: 18px;
+      }
+      h5 {
+         font-size: 13px;
+         margin: 23px 0 11px;
+      }
+      .button {
+         font-size: 18px;
+         height: 80px;
+      }
+   }
+}
