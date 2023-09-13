@@ -7,8 +7,7 @@ header {
 }
 
 .header-top {
-   display: flex;
-   justify-content: space-between;
+   @include flex-between;
    align-items: center;
    border-bottom: 1px solid #babbc5;
 }
@@ -32,6 +31,7 @@ nav {
       }
 
       &:active {
+         background: transparent;
          transition: all 0.001s ease;
          border-bottom: 3px solid $hover-orange;
          color: $hover-orange;
@@ -69,6 +69,7 @@ nav {
       background-size: cover;
       padding-bottom: 126px;
    }
+
    nav {
       .button {
          max-width: 112px;

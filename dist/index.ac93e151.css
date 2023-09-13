@@ -104,6 +104,7 @@ nav .button:hover {
 nav .button:active {
   color: #e71414;
   box-shadow: none;
+  background: none;
   border-bottom: 3px solid #e71414;
   transition: all 1ms;
 }
@@ -596,6 +597,124 @@ nav .button:active {
   .download-content .button {
     height: 80px;
     font-size: 18px;
+  }
+}
+
+footer {
+  color: #fff;
+  background: #353c65;
+}
+
+.footer-top {
+  padding: 71px 0;
+  display: flex;
+}
+
+.footer-top__item {
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 29px;
+  width: 100%;
+  display: flex;
+}
+
+.footer-top__item h5 {
+  text-transform: uppercase;
+}
+
+.footer-top__item p {
+  text-transform: capitalize;
+}
+
+.footer-top__item--gap {
+  gap: 48px;
+}
+
+.footer-top__links {
+  gap: 27px;
+  display: flex;
+}
+
+.footer-bot {
+  color: gray;
+  background: #2c3154;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 0;
+  display: flex;
+}
+
+.footer-bot h5 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.footer-bot h5 span {
+  color: #fff;
+}
+
+@media screen and (width <= 1025px) {
+  .footer-top {
+    padding: 46px 0 41px;
+  }
+
+  .footer-top h5, .footer-top p {
+    font-size: 14px;
+  }
+
+  .footer-top__item {
+    gap: 17px;
+    font-size: 14px;
+  }
+
+  .footer-top__item--gap {
+    gap: 32px;
+  }
+
+  .footer-top__links {
+    gap: 23px;
+  }
+
+  .footer-top__links a {
+    max-width: 33px;
+  }
+
+  .footer-bot {
+    padding: 14px 0;
+    font-size: 14px;
+  }
+
+  .footer-bot h5, .footer-bot span {
+    font-size: 14px;
+  }
+}
+
+@media screen and (width <= 541px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 0;
+    padding: 34px 0;
+  }
+
+  .footer-top .footer-top__item:nth-child(2) {
+    margin-top: 69px;
+  }
+
+  .footer-top .footer-top__item:last-child {
+    margin-top: 59px;
+  }
+
+  .footer-top__links {
+    gap: 16px;
+  }
+
+  .footer-top__item {
+    gap: 34px;
+  }
+
+  .footer-bot {
+    padding: 29px 0;
   }
 }
 

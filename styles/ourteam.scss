@@ -5,8 +5,7 @@
 }
 
 .ourteam-content__item {
-   display: flex;
-   flex-direction: column;
+   @include flex-column;
    justify-content: space-between;
    h3 {
       color: $item-head-color;

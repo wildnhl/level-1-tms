@@ -4,10 +4,10 @@
 
 .features-content {
    display: flex;
+   justify-content: center;
    flex-wrap: wrap;
    column-gap: 31px;
    row-gap: 87px;
-   justify-content: center;
 }
 
 .features-content__item {

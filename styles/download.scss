@@ -4,7 +4,7 @@
 .download-content {
    text-align: center;
    h3 {
-      font-size: 30;
+      font-size: 30px;
       font-weight: 500;
       text-transform: capitalize;
    }
@@ -13,7 +13,6 @@
       margin: 22px 0 47px;
    }
 }
-
 @media screen and (max-width: 1025px) {
    .download-content {
       h3 {

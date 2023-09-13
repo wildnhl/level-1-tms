@@ -8,8 +8,7 @@
 }
 
 .testimonials__item {
-   display: flex;
-   flex-direction: column;
+   @include flex-column;
    justify-content: center;
    max-width: 471px;
    margin: 0 auto;
