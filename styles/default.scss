@@ -46,16 +46,12 @@ img {
       background: $hover-orange;
       box-shadow: 4px 4px 30px 0px $main-orange;
    }
-}
 
-@media screen and (max-width: 1025px) {
-   .button {
+   @media screen and (max-width: 1025px) {
       width: 314px;
    }
-}
 
-@media screen and (max-width: 676px) {
-   .button {
+   @media screen and (max-width: 676px) {
       width: 280px;
       height: 60px;
    }

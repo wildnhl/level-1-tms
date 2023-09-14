@@ -1,10 +1,19 @@
 .work {
    display: grid;
-   grid-template-columns: repeat(4, 1fr);
-   grid-template-rows: repeat(2, 1fr);
+   grid-template-columns: repeat(8, 1fr);
+   grid-template-rows: 1fr;
    column-gap: 2px;
    row-gap: 2px;
    padding: 0 2px;
+   margin: 0 auto;
+   @media screen and (max-width: 2560px) {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+   }
+   @media screen and (max-width: 769px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+   }
 }
 .work__hover {
    position: absolute;
@@ -63,13 +72,6 @@
       h5 {
          font-size: 14px;
       }
-   }
-}
-
-@media screen and (max-width: 769px) {
-   .work {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(4, 1fr);
    }
 }
 

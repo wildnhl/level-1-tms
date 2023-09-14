@@ -4,16 +4,42 @@ header {
    background-position: center;
    background-size: cover;
    padding-bottom: 120px;
+
+   @media screen and (max-width: 1025px) {
+      background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)),
+         url('./img/header/bg-header-1024px.jpg') no-repeat;
+      background-position: center;
+      background-size: cover;
+      padding-bottom: 126px;
+   }
+
+   @media screen and (max-width: 676px) {
+      padding-bottom: 52px;
+   }
 }
 
 .header-top {
    @include flex-between;
    align-items: center;
    border-bottom: 1px solid #babbc5;
+   @media screen and (max-width: 800px) {
+      height: 55px;
+      border: none;
+   }
+}
+
+.logo {
+   @media screen and (max-width: 676px) {
+      width: 103px;
+      max-height: 14px;
+   }
 }
 
 nav {
    display: flex;
+   @media screen and (max-width: 800px) {
+      display: none;
+   }
 
    .button {
       background: transparent;
@@ -37,95 +63,57 @@ nav {
          color: $hover-orange;
          box-shadow: none;
       }
+
+      @media screen and (max-width: 1025px) {
+         max-width: 112px;
+         font-size: 12px;
+      }
    }
 }
 
 .header-content {
    text-align: center;
    margin-top: 131px;
+
+   @media screen and (max-width: 1025px) {
+      margin-top: 157px;
+   }
+   @media screen and (max-width: 676px) {
+      margin-top: 49px;
+   }
 }
 .header-content__head {
    font-size: 64px;
    color: #fff;
    font-weight: 900;
    text-transform: uppercase;
+
+   @media screen and (max-width: 1025px) {
+      font-size: 48px;
+   }
+   @media screen and (max-width: 676px) {
+      font-size: 36px;
+   }
 }
 .header-content__subhead {
    color: #fff;
    font-size: 24px;
    font-weight: 400;
    margin: 31px 0 79px;
+   @media screen and (max-width: 1025px) {
+      font-size: 18px;
+      margin: 61px 0 89px;
+   }
+   @media screen and (max-width: 676px) {
+      font-size: 14px;
+      margin: 32px 0 49px;
+   }
 }
 
 .burger-icon {
    display: none;
-}
-
-@media screen and (max-width: 1025px) {
-   header {
-      background: linear-gradient(rgba(37, 43, 73, 0.8), rgba(37, 43, 73, 0.8)),
-         url('./img/header/bg-header-1024px.jpg') no-repeat;
-      background-position: center;
-      background-size: cover;
-      padding-bottom: 126px;
-   }
-
-   nav {
-      .button {
-         max-width: 112px;
-         font-size: 12px;
-      }
-   }
-
-   .header-content {
-      margin-top: 157px;
-   }
-
-   .header-content__head {
-      font-size: 48px;
-   }
-
-   .header-content__subhead {
-      font-size: 18px;
-      margin: 61px 0 89px;
-   }
-}
-
-@media screen and (max-width: 800px) {
-   .header-top {
-      height: 55px;
-      border: none;
-   }
-
-   .burger-icon {
+   @media screen and (max-width: 800px) {
       display: block;
       margin-right: 15px;
-   }
-
-   nav {
-      display: none;
-   }
-}
-
-@media screen and (max-width: 676px) {
-   header {
-      padding-bottom: 52px;
-   }
-   .logo {
-      width: 103px;
-      max-height: 14px;
-   }
-
-   .header-content {
-      margin-top: 49px;
-   }
-
-   .header-content__head {
-      font-size: 36px;
-   }
-
-   .header-content__subhead {
-      font-size: 14px;
-      margin: 32px 0 49px;
    }
 }

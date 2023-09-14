@@ -74,6 +74,26 @@ header {
   padding-bottom: 120px;
 }
 
+@media screen and (width <= 1025px) {
+  header {
+    background-color: #0000;
+    background-image: linear-gradient(#252b49cc, #252b49cc), url("bg-header-1024px.2ff894a4.jpg");
+    background-position: center;
+    background-repeat: repeat, no-repeat;
+    background-size: cover;
+    background-attachment: scroll, scroll;
+    background-origin: padding-box, padding-box;
+    background-clip: border-box, border-box;
+    padding-bottom: 126px;
+  }
+}
+
+@media screen and (width <= 676px) {
+  header {
+    padding-bottom: 52px;
+  }
+}
+
 .header-top {
   border-bottom: 1px solid #babbc5;
   justify-content: space-between;
@@ -81,8 +101,28 @@ header {
   display: flex;
 }
 
+@media screen and (width <= 800px) {
+  .header-top {
+    border: none;
+    height: 55px;
+  }
+}
+
+@media screen and (width <= 676px) {
+  .logo {
+    width: 103px;
+    max-height: 14px;
+  }
+}
+
 nav {
   display: flex;
+}
+
+@media screen and (width <= 800px) {
+  nav {
+    display: none;
+  }
 }
 
 nav .button {
@@ -109,9 +149,28 @@ nav .button:active {
   transition: all 1ms;
 }
 
+@media screen and (width <= 1025px) {
+  nav .button {
+    max-width: 112px;
+    font-size: 12px;
+  }
+}
+
 .header-content {
   text-align: center;
   margin-top: 131px;
+}
+
+@media screen and (width <= 1025px) {
+  .header-content {
+    margin-top: 157px;
+  }
+}
+
+@media screen and (width <= 676px) {
+  .header-content {
+    margin-top: 49px;
+  }
 }
 
 .header-content__head {
@@ -121,6 +180,18 @@ nav .button:active {
   font-weight: 900;
 }
 
+@media screen and (width <= 1025px) {
+  .header-content__head {
+    font-size: 48px;
+  }
+}
+
+@media screen and (width <= 676px) {
+  .header-content__head {
+    font-size: 36px;
+  }
+}
+
 .header-content__subhead {
   color: #fff;
   margin: 31px 0 79px;
@@ -128,79 +199,28 @@ nav .button:active {
   font-weight: 400;
 }
 
-.burger-icon {
-  display: none;
-}
-
 @media screen and (width <= 1025px) {
-  header {
-    background-color: #0000;
-    background-image: linear-gradient(#252b49cc, #252b49cc), url("bg-header-1024px.2ff894a4.jpg");
-    background-position: center;
-    background-repeat: repeat, no-repeat;
-    background-size: cover;
-    background-attachment: scroll, scroll;
-    background-origin: padding-box, padding-box;
-    background-clip: border-box, border-box;
-    padding-bottom: 126px;
-  }
-
-  nav .button {
-    max-width: 112px;
-    font-size: 12px;
-  }
-
-  .header-content {
-    margin-top: 157px;
-  }
-
-  .header-content__head {
-    font-size: 48px;
-  }
-
   .header-content__subhead {
     margin: 61px 0 89px;
     font-size: 18px;
   }
 }
 
-@media screen and (width <= 800px) {
-  .header-top {
-    border: none;
-    height: 55px;
-  }
-
-  .burger-icon {
-    margin-right: 15px;
-    display: block;
-  }
-
-  nav {
-    display: none;
-  }
-}
-
 @media screen and (width <= 676px) {
-  header {
-    padding-bottom: 52px;
-  }
-
-  .logo {
-    width: 103px;
-    max-height: 14px;
-  }
-
-  .header-content {
-    margin-top: 49px;
-  }
-
-  .header-content__head {
-    font-size: 36px;
-  }
-
   .header-content__subhead {
     margin: 32px 0 49px;
     font-size: 14px;
+  }
+}
+
+.burger-icon {
+  display: none;
+}
+
+@media screen and (width <= 800px) {
+  .burger-icon {
+    margin-right: 15px;
+    display: block;
   }
 }
 
@@ -280,11 +300,26 @@ nav .button:active {
 }
 
 .work {
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(8, 1fr);
   gap: 2px;
+  margin: 0 auto;
   padding: 0 2px;
   display: grid;
+}
+
+@media screen and (width <= 2560px) {
+  .work {
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (width <= 769px) {
+  .work {
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .work__hover {
@@ -346,13 +381,6 @@ nav .button:active {
 
   .work__hover h5 {
     font-size: 14px;
-  }
-}
-
-@media screen and (width <= 769px) {
-  .work {
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -440,6 +468,11 @@ nav .button:active {
   .ourteam-content__item p {
     margin: 38px 0 55px;
   }
+}
+
+.testimonials {
+  max-width: 2560px;
+  margin: 0 auto;
 }
 
 .testimonials__person {
