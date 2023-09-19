@@ -23,6 +23,7 @@ header {
    align-items: center;
    border-bottom: 1px solid #babbc5;
    @media screen and (max-width: 800px) {
+      position: relative;
       height: 55px;
       border: none;
    }
@@ -38,7 +39,14 @@ header {
 nav {
    display: flex;
    @media screen and (max-width: 800px) {
-      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 85px;
+      left: 0;
+      z-index: 4;
+      width: 100%;
+      transform: translateX(-100%);
+      transition: all 0.3s;
    }
 
    .button {
@@ -46,7 +54,6 @@ nav {
       height: inherit;
       font-size: 13px;
       line-height: 100px;
-      height: 100px;
       max-width: 134px;
       font-weight: 700;
       border-bottom: 3px solid transparent;
@@ -68,12 +75,18 @@ nav {
          max-width: 112px;
          font-size: 12px;
       }
+
+      @media screen and (max-width: 800px) {
+         line-height: 63px;
+         text-align: left;
+      }
    }
 }
 
 .header-content {
    text-align: center;
    margin-top: 131px;
+   transition: all 0.3s;
 
    @media screen and (max-width: 1025px) {
       margin-top: 157px;
@@ -81,6 +94,9 @@ nav {
    @media screen and (max-width: 676px) {
       margin-top: 49px;
    }
+}
+._hide {
+   opacity: 0;
 }
 .header-content__head {
    font-size: 64px;
@@ -112,8 +128,24 @@ nav {
 
 .burger-icon {
    display: none;
+   cursor: pointer;
+   background-image: url('./img/header/burger-icon.svg');
+   width: 24px;
+   height: 18px;
+   transition: all 0.3s;
    @media screen and (max-width: 800px) {
       display: block;
       margin-right: 15px;
    }
+}
+
+._active {
+   display: flex;
+   transform: translateX(0);
+}
+
+.burger-icon.close {
+   background-image: url('./img/header/burger-close.svg');
+   background-position: center;
+   background-size: cover;
 }
